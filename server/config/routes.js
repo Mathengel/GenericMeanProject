@@ -1,12 +1,12 @@
 console.log("module routes loaded...")
-// var products = require('../controllers/products.js')
+var products = require('../controllers/products.js')
 // var customers = require('../controllers/customers.js')
 // var orders = require('../controllers/orders.js')
 
 module.exports = function(app){
 
-    // app.get('/products', products.index)
-    // app.post('/products', products.create)
+    app.get('/products', products.index)
+    app.post('/products', products.create)
 
     // app.get('/customers', customers.index)
     // app.post('/customers', customers.create)
